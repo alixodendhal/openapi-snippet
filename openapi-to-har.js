@@ -624,7 +624,7 @@ const getFullPath = function (openApi, path, method) {
     fullPath = fullPath.replace('{' + name + '}', value);
   });
 
-  return fullPath;
+  return decodeURIComponent(fullPath);
 };
 
 /**
